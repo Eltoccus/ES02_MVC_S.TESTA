@@ -1,6 +1,6 @@
 ﻿namespace ES02_MVC_S.TESTA
 {
-    partial class Form1
+    partial class FrmMVC
     {
         /// <summary>
         /// Variabile di progettazione necessaria.

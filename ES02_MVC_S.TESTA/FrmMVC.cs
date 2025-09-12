@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ES02_MVC_S.TESTA
 {
-    public partial class Form1 : Form
+    public partial class FrmMVC : Form
     {
-        public Form1()
+        public FrmMVC()
         {
             InitializeComponent();
         }
