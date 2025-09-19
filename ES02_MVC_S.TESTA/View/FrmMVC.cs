@@ -33,6 +33,8 @@ namespace ES02_MVC_S.TESTA.View
             clsAlunniController alunniController;
             clsAlunni alunni;
             string nomeFile = "alunni.txt";
+            alunniController = new clsAlunniController(nomeFile);
+            dgv.DataSource = alunniController.LeggiAlunni();
 
         }
     }

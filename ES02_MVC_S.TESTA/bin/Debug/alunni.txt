@@ -1,0 +1,3 @@
+IdAlunno;Cognome;Nome;DataNascita;Icdl
+1;Testa;Marco;25/06/2008;True
+2;Ceratto;Zoe;25/10/1999;False
