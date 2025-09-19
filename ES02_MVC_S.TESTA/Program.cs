@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//
+//using ES02_MVC_S.TESTA.View;          O fare come a riga Application.Run(new *nome namespace*.*nome form*());
 
 namespace ES02_MVC_S.TESTA
 {
@@ -16,7 +18,7 @@ namespace ES02_MVC_S.TESTA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMVC());
+            Application.Run(new ES02_MVC_S.TESTA.View.FrmMVC());
         }
     }
 }

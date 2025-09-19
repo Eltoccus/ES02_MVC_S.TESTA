@@ -46,7 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\clsAlunniController.cs" />
     <Compile Include="Model\clsAlunni.cs" />
+    <Compile Include="View\FrmDettaglio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmDettaglio.Designer.cs">
+      <DependentUpon>FrmDettaglio.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmMVC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +62,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\FrmDettaglio.resx">
+      <DependentUpon>FrmDettaglio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FrmMVC.resx">
       <DependentUpon>FrmMVC.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,8 +90,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

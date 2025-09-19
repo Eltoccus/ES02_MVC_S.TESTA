@@ -14,6 +14,8 @@ namespace ES02_MVC_S.TESTA.Model
         private DateTime dataNascita;
         private bool icdl;
 
+
+
         public int IdAlunno
         {
             get

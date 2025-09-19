@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ES02_MVC_S.TESTA
+namespace ES02_MVC_S.TESTA.View
 {
     public partial class FrmMVC : Form
     {
