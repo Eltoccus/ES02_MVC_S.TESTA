@@ -16,5 +16,16 @@ namespace ES02_MVC_S.TESTA
         {
             InitializeComponent();
         }
+
+        private void FrmMVC_Load(object sender, EventArgs e)
+        {
+            /*
+             * Gestire gli alunni di una scuola mediante MVC con visualizzazione di 
+             * Master/Detail    dove l'inserimento e la modifica dei dati 
+             * verrà gestita con tecnologia multiform e passaggio di parametri
+             * tra form
+
+            */ 
+        }
     }
 }

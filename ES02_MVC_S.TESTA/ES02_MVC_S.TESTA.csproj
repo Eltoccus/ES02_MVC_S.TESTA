@@ -46,15 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmMVC.cs">
+    <Compile Include="Model\clsAlunni.cs" />
+    <Compile Include="View\FrmMVC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMVC.Designer.cs">
+    <Compile Include="View\FrmMVC.Designer.cs">
       <DependentUpon>FrmMVC.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmMVC.resx">
+    <EmbeddedResource Include="View\FrmMVC.resx">
       <DependentUpon>FrmMVC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -78,6 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

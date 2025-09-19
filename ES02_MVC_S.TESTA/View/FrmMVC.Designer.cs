@@ -36,7 +36,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FrmMVC";
-            this.Text = "Es02_MVC_S.TESTA";
+            this.Text = "Es02_MVC_S.TESTA(...)";
+            this.Load += new System.EventHandler(this.FrmMVC_Load);
             this.ResumeLayout(false);
 
         }
