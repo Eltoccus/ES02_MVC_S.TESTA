@@ -60,15 +60,15 @@ namespace ES02_MVC_S.TESTA.Controller
             return listaAlunni;
         }
 
-        public void scriviAlunni(List<clsAlunni> listaAlunni)
+        public void scriviAlunni(List<clsAlunni> _listaAlunni)
         {
             StreamWriter sw = new StreamWriter(nomeFile, false);
             sw.WriteLine("IdAlunno;Cognome;Nome;DataNascita;Icdl"); //intestazione
             sw.Close();
 
-            foreach (clsAlunni alunno in listaAlunni)
+            foreach (clsAlunni alunno in _listaAlunni)
             {
-                scriviAlunno(alunno, nomeFile);
+                scriviAlunno(alunno);
                 //alunni = alunno.IdAlunno.ToString() + ";";
                 //alunni += alunno.Cognome + ";";
                 //alunni += alunno.Nome + ";";
@@ -80,16 +80,16 @@ namespace ES02_MVC_S.TESTA.Controller
 
         }
 
-        public void scriviAlunno(clsAlunni alunno, string nomefile)
+        public void scriviAlunno(clsAlunni _alunno)
         {
             StreamWriter sw = new StreamWriter(nomeFile, true);
-            string testo = "";
+            string testo;
 
-            testo = alunno.IdAlunno.ToString() + ";";
-            testo += alunno.Cognome + ";";
-            testo += alunno.Nome + ";";
-            testo += alunno.DataNascita + ";";
-            testo += alunno.Icdl.ToString();
+            testo = _alunno.IdAlunno.ToString() + ";";
+            testo += _alunno.Cognome + ";";
+            testo += _alunno.Nome + ";";
+            testo += _alunno.DataNascita + ";";
+            testo += _alunno.Icdl.ToString();
 
             sw.WriteLine(testo);
 

@@ -31,11 +31,21 @@ namespace ES02_MVC_S.TESTA.View
             */
 
             clsAlunniController alunniController;
-            clsAlunni alunni;
             string nomeFile = "alunni.txt";
             alunniController = new clsAlunniController(nomeFile);
             dgv.DataSource = alunniController.LeggiAlunni();
+        }
 
+        private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex > -1)
+            {
+                FrmDettaglio f = new FrmDettaglio();
+                //  MessageBox.Show("Prima");
+                f.ShowDialog();                 //In modalità modale, blocca la form e l'azione dopo di quelli vengono eseguiti solo dopo che la form viene chiusa
+                //f.Show();                     //In modalità non modale, non blocca la form e l'azione dopo di quelli vengono eseguiti subito
+                //   MessageBox.Show("Dopo");
+            }
         }
     }
 }
